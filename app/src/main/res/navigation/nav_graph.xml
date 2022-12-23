@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/InputIDFragment">
+
+    <fragment
+        android:id="@+id/InputIDFragment"
+        android:name="com.example.photoViewer.InputIDFragment"
+        android:label="@string/input_id_fragment_label"
+        tools:layout="@layout/fragment_input_id">
+
+        <action
+            android:id="@+id/action_InputIDFragment_to_AlbumsFragment"
+            app:destination="@id/AlbumsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/AlbumsFragment"
+        android:name="com.example.photoViewer.AlbumsFragment"
+        android:label="@string/albums_fragment_label"
+        tools:layout="@layout/fragment_albums">
+
+        <action
+            android:id="@+id/action_AlbumsFragment_to_InputIDFragment"
+            app:destination="@id/InputIDFragment" />
+
+        <action android:id="@+id/action_AlbumsFragment_to_PhotosFragment"
+            app:destination="@id/PhotoFragment"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/PhotoFragment"
+        android:name="com.example.photoViewer.PhotoFragment"
+        android:label="@string/photos_fragment_label"
+        tools:layout="@layout/fragment_photos">
+
+        <action
+            android:id="@+id/action_PhotosFragment_to_AlbumsFragment"
+            app:destination="@id/AlbumsFragment" />
+    </fragment>
+
+
+</navigation>

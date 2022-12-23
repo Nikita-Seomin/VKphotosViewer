@@ -1,0 +1,16 @@
+<resources>
+    <integer name="com_vk_sdk_AppId">51509781</integer>
+    <string name="app_name">photoViewer</string>
+    <string name="action_settings">Настройки</string>
+
+    <string name="input_id_fragment_label">Поисковик альбомов ВКонтакте</string>
+    <string name="input_ID">Введите ID</string>
+    <string name="NotInputID">ID отсутствует</string>
+    <string name="next">Получить список альбомов</string>
+
+    <string name="albums_fragment_label">Альбомы</string>
+    <string name="no_photos">В данном альбоме отсутствуют фото</string>
+
+    <string name="photos_fragment_label">Фото</string>
+
+</resources>
