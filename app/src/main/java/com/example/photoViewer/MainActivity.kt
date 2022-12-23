@@ -26,7 +26,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
     private val client = OkHttpClient()
     var bundle = Bundle()
-    var TOKEN = "vk1.a.GkCTaK8JuNUKlQIIJUXRzvbDr3CZeAkRgbVQIjbNI3p5Iut_0mjRcI9yvrcDM6rZr3upANtimStyGa0znU_gDQ85Fl-LEH27COGAwkltvYtDfS2_H5amfxf4PPeNxawEYIJX73pjRHBk31tdmhXpvQNjbklBDryhmJuB0NiWjGrbXAZyidXqxyQAYBERjiQnWOMeJAtT9CQnHmY0R5kjkQ"
+    var TOKEN = "vk1.a.lM4BgX3MMn-_uXDkhuAhE9y03ZmIZVmzqY_eH2WNF-0jcmVdspoXf9zz0_Q_Ksn4vCSAXW9G6JtP-C5VurEOQ3Pei_uAgNLivj8fSz0sa9Ev_oxEGoV5GYgJBkgosGAJJin2_y_pqhuj43dOZHN0kQvpqsBqgrJ9QK7veBGgKmk1_YFMHM8MTHUAKwgl-LMEhXK04rlOen4bcBVol7hRPw"
 
     @RequiresApi1(Build.VERSION_CODES.N)
     override fun onCreate(savedInstanceState: Bundle?) {

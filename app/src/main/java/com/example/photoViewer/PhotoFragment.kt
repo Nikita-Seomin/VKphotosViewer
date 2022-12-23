@@ -9,7 +9,7 @@ import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 
-@Suppress("DEPRECATION")
+
 class PhotoFragment : Fragment() {
 
     private lateinit var albumName : String

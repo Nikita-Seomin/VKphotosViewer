@@ -36,6 +36,7 @@ class InputIDFragment : Fragment() {
         binding.buttonFirst.setOnClickListener {
 
             val vkId = binding.editTextVKID.text.toString()
+            //println(vkId)
 
             if (vkId.isEmpty()) {
                 binding.editTextVKID.error = "ID отсутствует"
@@ -43,8 +44,7 @@ class InputIDFragment : Fragment() {
                 return@setOnClickListener
             }
 
-            val k : String = (activity as MainActivity).asyncRun("https://api.vk.com/method/photos.getAlbums?v=5.131&access_token=$TOKEN&owner_id=$vkId&need_system=1").get()
-
+            val k = (activity as MainActivity).asyncRun("https://api.vk.com/method/photos.getAlbums?v=5.131&access_token=$TOKEN&owner_id=$vkId&need_system=1").get()
             if (k.substring(2, 7) == "error") {
                 binding.editTextVKID.error = "Неверный ID пользователя"
                 binding.editTextVKID.requestFocus()
